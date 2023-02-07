@@ -1,0 +1,56 @@
+
+
+<%- include ("./partials/_header") %>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- </div>
+<div class ="media">
+<video width="1080" controls Autoplay=autoplay>
+    <source src="Video_ShortVersion.mp4" type="video/mp4"> 
+</video>
+</div>
+<div class = "desc">
+    <h1>Jacques Martell <br> Análisis de señales: un enfoque visual</h1>
+    <img src= "jacques.jpg" alt="avatar" width="170" height="170">
+</div>
+<div class="textos">
+    <h2>descripción del proyecto</h2>
+    <p>¡Bienvenidos a Un enfoque visual al análisis de señales! Esta es una
+        serie multimedia educativa que busca ser brindar las bases del
+        análisis de señales y sistemas para aquellos que deseen aprender sobre
+        el tema.</p>
+</div> -->
+
+<div>
+    <table class="table table-dark table-hover">
+      <thead class="table-dark">
+        <caption>Obras disponibles</caption>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Description</th>
+          <th>Media</th>
+          <th>Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let i = 0; i <galerias.length; i++) { %>
+        <tr>
+          <td><%= i + 1 %></td>
+          <td>><strong><%= galerias[i].title %></strong></td>
+          <td><%= galerias[i].author %></td>
+          <td><%= galerias[i].description %></td>
+          <td><img src="<%= galerias[i].media %>" alt= '' alt="" width="300" height="200"></td>
+          <td>
+            <a href="/delete/<%= galerias[i]._id %>" class="btn btn-danger">Delete</a>
+            <a href="/edit/<%= galerias[i]._id %>" class="btn btn-info">Edit</a>
+          </td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+
+
+
+<%- include ("./partials/_footer") %>

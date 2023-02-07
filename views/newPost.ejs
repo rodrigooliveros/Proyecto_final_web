@@ -1,0 +1,35 @@
+
+
+
+<%- include ("./partials/_header") %>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8 blog-main">
+        
+        <form action="/newPost" method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control" name="title" placeholder="Title">
+          </div>
+          <div class="form-group">
+            <input type="text" name="author" class="form-control" placeholder="Author">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="description" cols="100" rows="10"
+              placeholder="Add a Description">
+            </textarea>
+          </div>
+          <div class="form-group">
+            <input type="text" name="media" class="form-control" placeholder="media">
+            <!-- https://picsum.photos/200/300 -->
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <%- include ("./partials/_footer") %>

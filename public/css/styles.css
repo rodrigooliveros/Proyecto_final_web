@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    width: auto;
+  }
+
+
+.marquesina{
+    width: 100%;
+    height: 100px;
+    background: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: marquesina 14s linear infinite;
+  }
+
+  .nombre{
+    font-size: 80px;
+    font-style: italic;
+    color: green;
+    text-align: center;
+    text-shadow: 4px 4px 10px greenyellow;
+    margin: 30px 0 0 0;
+  }
+
+  .mision{
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    
+  }
+
+  .titulo{
+    font-size: 40px;
+    font-style: italic;
+    color: green;
+    text-align: left;
+    text-shadow: 4px 4px 10px greenyellow;
+
+  }
+
+.vision{
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    
+}
+
+p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: justify;
+  }
+
+  .contenedor{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background: white;
+    margin: 0 0 30px 0;
+  }
+  
+
+  .button-menu{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .topnav {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: green;
+    color: white;
+  }
+  .searchBar{
+    flex-wrap: wrap;
+    float: right;
+    margin-top: 13px;
+    margin-right: 7px;
+  }
+
+  .portada{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  /*main searchbar */
+.mainBar{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+}
+
+.searchBar{
+    flex-wrap: wrap;
+    float: right;
+    margin-top: 13px;
+    margin-right: 7px;
+}
+
+.searchBar input[type=text]{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+.searchBar button{
+    float: left;
+    width: 20%;
+    padding: 6px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.searchBar button:hover{
+    background: #0b7dda;
+}
+
+.searchBar::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* galeria de index */
+h1{
+  text-align: center;
+  font-size: 50px;
+  color: green;
+}
+
+section{
+  display: flex;
+  flex-grow: 600px;
+  height: 430px;   
+}
+
+section img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+section img:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}

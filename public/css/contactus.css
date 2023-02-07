@@ -1,0 +1,71 @@
+
+body{
+    background-image:url("https://findercasa.com/wp-content/uploads/2019/11/iStock-638754398-1024x680.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    width: auto;
+}
+
+.contact{
+    font-size: 80px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 10px gray;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /* background: white; */
+    width: 100%;
+    height: 100vh;
+}
+
+div.transbox{
+    background-color: #ffffff;
+    opacity: 0.6;
+    /* filter: alpha(opacity=60); For IE8 and earlier */
+    width: 60%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+iframe{
+    width: 600px;
+    height: 600px;
+    border: 3px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+div.transbox h1{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+
+div.transbox h2{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+div.transbox p{
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+

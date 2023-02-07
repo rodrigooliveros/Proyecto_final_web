@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar post</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <!-- <nav class="navbar navbar-dark bg-dark mb-4">
+      <a class="navbar-brand" href="#">CRUD Nodejs y Mongodb</a>
+    </nav> -->
+
+    <div class="container">
+        <div class="row">
+          <!--FORM-->
+          <div class="col-md-5 offset-md-3">
+            <div class="card">
+              <div class="card-body">
+                <form action="/edit/<%=galerias._id%>" method="post">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="title" placeholder="Title" value="<%= galerias.title  %>">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" name="description" cols="80"
+                      placeholder="Add a Description"><%= galerias.description %> </textarea>
+                  </div>
+                  <button class="btn btn-primary" type="submit">
+                    Update 
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+
+</body>
+
+</html>
